@@ -1,0 +1,106 @@
+.menu {
+  &__inner {
+  }
+
+  // .menu__title
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 155px;
+    width: 100%;
+    min-height: 75px;
+    margin: 0 auto;
+    background-image: url(../images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 80px 0 80px;
+  }
+
+  &__card {
+    max-width: 492px;
+    width: 100%;
+  }
+
+  &__card-item {
+    & + & {
+      margin-top: 61px;
+    }
+  }
+
+  &__card-name {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: $grey;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 64px;
+      width: 192px;
+      height: 1px;
+      background-color: #e3e1e1;
+    }
+  }
+
+  &__card-price {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: $grey;
+  }
+
+  &__card-descr {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: $grey2;
+  }
+
+  &__more {
+    position: relative;
+    display: block;
+    max-width: 133px;
+    width: 100%;
+    padding: 9px 13px 9px 13px;
+    margin: 0 auto;
+    font-size: 14px;
+    letter-spacing: 0.98px;
+    border: 1px solid #d7d5d5;
+    background-color: #ffffff;
+    color: $grey2;
+    background-image: url(../images/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: 92% center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 35px;
+      top: 13px;
+      width: 1px;
+      height: 12px;
+      background-color: #b7b7b7;
+    }
+
+
+  }
+}

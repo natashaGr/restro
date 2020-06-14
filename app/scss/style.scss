@@ -1,14 +1,22 @@
+@import "fonts";
+@import "vars";
+@import "global";
+
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-body {
-    display: flex;
-    transition: all 3s;
-}
+
+
+@import "header";
+@import "home-pg";
+@import "menu";
+@import "featured-slider";
+@import "gallery";
+@import "footer";

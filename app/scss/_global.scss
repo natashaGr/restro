@@ -1,0 +1,42 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #3b3b3b;
+  padding-right: 219px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 200px;
+    height: 1px;
+    background-color: #e5e3e3;
+  }
+}

@@ -1,0 +1,36 @@
+.header {
+  background-color: #ffffff;
+  &__inner {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__item {
+      & + & {
+          margin-left: 49px;
+      }
+  }
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.98px;
+    color: $blackl;
+    transition:  .5s;
+    &:hover,
+    &:focus {
+        color: $red;
+    }
+  }
+}
+
+

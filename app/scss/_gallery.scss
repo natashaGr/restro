@@ -1,0 +1,33 @@
+.gallery {
+  padding: 0 0 200px;
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__link {
+      display: block;
+  }
+
+  &__singleimg {
+    display: block;
+    max-width: 366px;
+    width: 100%;
+    min-height: 432px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.94;
+  }
+
+  &__photo {
+    display: block;
+    max-width: 367px;
+    width: 100%;
+    min-height: 216px;
+    height: 100%;
+    opacity: 0.94;
+  }
+}
